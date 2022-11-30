@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Plant diseases dection</title>
+    <style>
+        *{
+            margin:0px;
+            padding:0px;
+        }
+        .container{
+            margin-top: 5%;
+        }
+        .container h1{
+            padding:20px;
+            text-align:center;
+            color: aliceblue;
+            font-size: 35px;
+            font-family: Georgia, 'Times New Roman', Times, serif;
+            
+        }
+        .form_data{
+            text-align: center;
+            padding:20px;
+        }
+        .form_data input{
+            margin:20px;
+            padding:10px;
+        }
+    </style>        
+    </head>
+    <body background="{{ url_for('static', filename='/Image/pexels-pixabay-326279.jpg') }}">
+    <div class="container">
+		<h1>Calories Detection</h1>
+		<form class="form_data" method="POST" action="/home" enctype="multipart/form-data">
+			<input type="file" name="file" autocomplete="off" required><br>
+			<input type="submit" value="Submit">
+		</form>
+		</div>
+    </body>
+</html>

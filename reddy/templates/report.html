@@ -1,0 +1,35 @@
+<html>
+<head>
+<title>Report for the plant.</title>
+<style>
+	*{
+		margin:0px;
+		padding:0px;
+	}
+	.container{
+            margin-top: 8%;
+            width: 40%;
+            min-width: 300px;
+            margin: auto;
+			background-color:aqua ;
+        }
+	.container img{
+		padding:20px;
+		text-align: center;
+	}
+	.container p{
+		padding:20px;	}
+</style>
+</head>
+<body>
+	<div class="container">
+		<img style="text-align: center; justify-content: center;" src="{{url_for('static',filename = '/Image/'+filename)}}"><br><br>
+		<p>Food name : {{disease_name}}</p>
+		<p>Calories : {{calories}}</p>
+		<p>Protein : {{protein}}</p>
+		<p>Carbohydrates : {{carbohydrates}}</p>
+		<p>Fat : {{fat}}</p>
+		<p>{{message}}</p>
+	</div>
+</body>
+</html>

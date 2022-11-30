@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Oswald&display=swap" rel="stylesheet">
+	<title>IBM project</title>
+	<style>
+		*{
+		margin: 0px;
+		padding: 0px;
+		text-decoration: none;
+		}
+		body{
+			background-size: cover;
+		}
+		.content{
+			text-align: center;
+		}
+		.container{
+			display: flex;
+			justify-content: center;
+			align-items: center;
+			margin: auto;
+		}
+		.row{
+			display: flex;
+
+			
+		}
+		.column{
+			border-style:groove;
+			margin:120px;
+			padding:20px;
+			margin-top: 12%;
+
+		}
+
+	</style>
+</head>
+<body background="{{ url_for('static', filename='/Image/pexels-ray-piedra-1565982.jpg') }}">
+	<div class="content">
+		<h1 style="font-size: 55px;padding:20px; color:rgb(77, 153, 219)">Stay fit and stay healthy</h1>
+		<h3 style="font-size: 30px; padding:20px; color:rgb(105, 148, 185)">Know the amount of calories in each food.</h3>
+		<h3 style="font-size: 30px; padding:10px; color:rgb(70, 142, 204)">Keep your diet in control.</h3>
+	</div>
+
+
+		<div class="container">
+			<div class="row">
+				<div class="column">
+					<a href="/home" style="color:aquamarine">Detect calories</a>
+				</div>
+				<div class="column">
+					<a href="/diet" style="color:aquamarine">Diet chart</a>
+				</div>
+			</div>
+		</div>
+</body>
+</html>

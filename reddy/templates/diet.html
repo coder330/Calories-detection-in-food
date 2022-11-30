@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <title>Title</title>
+    <style>
+        *{
+            margin: 0px;
+            padding: 0px;
+            border-radius: 0px;
+            text-decoration: none;
+        }
+        body{
+            background-color: #DB5759;
+        }
+        .container{
+            margin-top: 8%;
+            width: 40%;
+            min-width: 300px;
+            margin: auto;
+        }
+        .container h1{
+            text-align: center;
+            font-size: 40px;
+            font-style: serif;
+            padding: 20px;
+        }
+        .row{
+            padding: 10px;
+            text-align: center;
+        }
+        .row input{
+            width: 80%;
+            height: 40px;
+            padding: 5px;
+            font-size: 16px;
+            border: none;
+            border-radius: 15px;
+            align-content: center;
+        }
+        .row select{
+            width: 82%;
+            height: 50px;
+            border-radius: 15px;
+            font-size: 16px;
+            border: none;
+        }
+        .cropname{
+            margin-top: -5%;
+            margin-left: 11%;
+        }
+        .cropname:before{
+            content: ' \002A';
+            color: blueviolet;
+        }
+        .button{
+            padding: 20px;
+            text-align: center;
+        }
+        .button input{
+            padding: 8px;
+            border: none;
+            border-radius: 10px;
+            font-size: 14px;
+            font-style: oblique;
+            font-weight: 600;
+        }
+        .button input:hover{
+            background-color: grey;
+        }
+
+    </style>
+</head>
+<body>
+	<div class="container">
+		<h1>Fertilizer Analysiser</h1>
+		<form name="search" action="/diet" method="post">
+			<div class="row">
+			<input type="text" name="name" placeholder="Enter the name:"><br><br>
+		</div>
+		<div class="row">
+			<input type="number" name="age" placeholder="Enter the age:"><br><br>
+		</div>
+		<div class="row">
+			<select id="cropname" name="cropname">
+          <option value="male">Male</option>
+          <option value="female">Female</option>
+        </select><br><br>
+    </div>
+    <div class="row">
+        <select id="cropname" name="diet_plan">
+      <option value="normal">Balance diet</option>
+      <option value="weightloss">Weight loss</option>
+      <option value="musclegain">Muscle gain</option>
+      <option value="workout">Workout diet</option>
+    </select><br><br>
+</div>
+     <div class="button">
+     	<input type="submit" name="Submit"></div>
+</form>
+</div>
+
+</body>
+</html>
